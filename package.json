@@ -1,7 +1,11 @@
 {
-  "name": "parcel-template-blank",
-  "version": "1.0.2",
-  "description": "Blank template project starter-kit with Parcel Bundler",
+  "name": "vuedcast",
+  "version": "1.0.0",
+  "description": "A Vue podcast player",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Myugen/vuedcast.git"
+  },
   "main": "index.html",
   "scripts": {
     "dev": "parcel serve src/index.html --open",
@@ -13,16 +17,15 @@
   },
   "keywords": [
     "parcel",
-    "template",
+    "podcast",
     "html5",
-    "pug",
+    "player",
     "css3",
     "postcss",
     "stylelint",
-    "typescript",
-    "tslint",
     "javascript",
-    "eslint"
+    "eslint",
+    "vue"
   ],
   "author": "Myugen",
   "license": "ISC",
@@ -39,12 +42,15 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.2.2",
+    "husky": "1.3.1",
     "npm-run-all": "^4.1.3",
     "parcel-plugin-bundle-visualiser": "^1.2.0",
     "postcss-clean": "^1.1.0",
     "postcss-font-magician": "^2.2.1",
     "postcss-mixins": "^6.2.1",
     "postcss-preset-env": "^6.6.0",
+    "prettier": "1.16.4",
+    "pretty-quick": "1.10.0",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
     "vue-hot-reload-api": "^2.3.3",
