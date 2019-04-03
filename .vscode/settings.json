@@ -2,8 +2,6 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "eslint.validate": [
-    "javascript",
-    { "language": "vue", "autoFix": true }
-  ]
+  "eslint.validate": ["javascript", { "language": "vue", "autoFix": true }],
+  "prettier.requireConfig": true
 }
