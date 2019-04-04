@@ -15,6 +15,11 @@
     "clean:all": "rm -rf node_modules package-lock.json .cache dist build",
     "deploy": "git subtree push --prefix build origin gh-pages"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "keywords": [
     "parcel",
     "podcast",
@@ -58,6 +63,7 @@
     "vue-template-compiler": "^2.6.8"
   },
   "dependencies": {
+    "@ibm/plex": "^1.3.1",
     "vue": "^2.6.8"
   }
 }
