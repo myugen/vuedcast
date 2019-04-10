@@ -13,7 +13,11 @@
     "build": "rm -rf build/* && npx parcel build src/index.html -d build --global global --public-url /",
     "clean:cache": "rm -rf .cache dist build",
     "clean:all": "rm -rf node_modules package-lock.json .cache dist build",
-    "deploy": "git subtree push --prefix build origin gh-pages"
+    "deploy": "git subtree push --prefix build origin gh-pages",
+    "prettier": "prettier --config ./.prettierrc --write src/**/*.js src/**/*.vue",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --colors"
   },
   "husky": {
     "hooks": {
@@ -39,15 +43,23 @@
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@vue/component-compiler-utils": "^2.6.0",
+    "@vue/test-utils": "^1.0.0-beta.29",
     "autoprefixer": "^9.4.10",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
     "eslint": "^5.15.1",
     "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.4.1",
     "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.2.2",
     "husky": "1.3.1",
+    "jest": "^24.7.1",
     "npm-run-all": "^4.1.3",
     "parcel": "1.12.3",
     "parcel-plugin-bundle-visualiser": "^1.2.0",
@@ -60,6 +72,7 @@
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
     "vue-hot-reload-api": "^2.3.3",
+    "vue-jest": "^3.0.4",
     "vue-template-compiler": "^2.6.8"
   },
   "dependencies": {

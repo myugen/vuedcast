@@ -1,0 +1,8 @@
+
+/.git
+/.vscode
+build
+dist
+config
+node_modules
+*.config.js
